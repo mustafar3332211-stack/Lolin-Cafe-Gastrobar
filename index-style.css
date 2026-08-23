@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2b2620;
+  font-family: 'EB Garamond', Georgia, serif;
+}
+
+.phone-screen {
+  width: 390px;
+  min-height: 780px;
+  background-color: #f1ece0;
+  padding: 56px 28px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---- Marca ---- */
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 14px;
+}
+
+.brand-name {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 42px;
+  letter-spacing: 2px;
+  color: #4a4030;
+}
+
+.brand-sub {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #a15c3e;
+  margin-top: 4px;
+}
+
+.tagline {
+  margin-top: 20px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  color: #6b5c46;
+  line-height: 1.6;
+  max-width: 260px;
+}
+
+/* ---- Badges ---- */
+
+.badges {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.badges span {
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #a15c3e;
+  padding: 5px 10px;
+  border: 1px solid rgba(161, 92, 62, 0.4);
+}
+
+/* ---- Botones del menú ---- */
+
+.menu-list {
+  width: 100%;
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menu-btn {
+  display: block;
+  width: 100%;
+  padding: 16px 0;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid rgba(74, 64, 48, 0.25);
+  color: #4a4030;
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.menu-btn:hover,
+.menu-btn:focus-visible {
+  background-color: #a15c3e;
+  border-color: #a15c3e;
+  color: #fdfaf3;
+  outline: none;
+}
+
+/* ---- Botón principal (menú destacado) ---- */
+
+.menu-btn.primary {
+  background-color: #a15c3e;
+  border-color: #a15c3e;
+  color: #fdfaf3;
+}
+
+.menu-btn.primary:hover,
+.menu-btn.primary:focus-visible {
+  opacity: 0.9;
+  background-color: #a15c3e;
+}
+
+/* ---- Pie ---- */
+
+.footer-note {
+  margin-top: 30px;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: #8a7d68;
+  text-align: center;
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 420px) {
+  .phone-screen {
+    width: 100%;
+    min-height: 100vh;
+  }
+}
