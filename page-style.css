@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2b2620;
+  font-family: 'EB Garamond', Georgia, serif;
+}
+
+.phone-screen {
+  position: relative;
+  width: 390px;
+  min-height: 780px;
+  background-color: #f1ece0;
+  padding: 44px 26px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back-link {
+  position: absolute;
+  top: 16px;
+  left: 18px;
+  font-size: 22px;
+  color: #6b5c46;
+  text-decoration: none;
+}
+
+/* ---- Encabezado ---- */
+
+.page-header {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.page-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 0.5px;
+  color: #4a4030;
+}
+
+.page-subtitle {
+  margin-top: 8px;
+  font-size: 12.5px;
+  letter-spacing: 0.5px;
+  color: #a15c3e;
+}
+
+/* ---- Tarjetas de contacto / info ---- */
+
+.contact-list {
+  width: 100%;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  padding: 16px 18px;
+  background-color: #ffffff;
+  border: 1px solid rgba(74, 64, 48, 0.25);
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.contact-card:hover,
+.contact-card:focus-visible {
+  background-color: #f6f1e5;
+  outline: none;
+}
+
+.contact-icon {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contact-label {
+  font-size: 11.5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #a15c3e;
+}
+
+.contact-value {
+  font-family: 'Playfair Display', serif;
+  font-size: 16.5px;
+  color: #4a4030;
+}
+
+/* ---- Mapa ---- */
+
+.map-wrapper {
+  width: 100%;
+  height: 200px;
+  margin-top: 26px;
+  border: 1px solid rgba(74, 64, 48, 0.3);
+  overflow: hidden;
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  filter: sepia(8%) contrast(96%);
+}
+
+/* ---- Botón principal ---- */
+
+.action-btn {
+  display: block;
+  width: 100%;
+  margin-top: 16px;
+  padding: 15px 0;
+  text-align: center;
+  background-color: #a15c3e;
+  border: 1px solid #a15c3e;
+  color: #fdfaf3;
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: opacity 0.2s ease;
+}
+
+.action-btn:hover,
+.action-btn:focus-visible {
+  opacity: 0.88;
+  outline: none;
+}
+
+/* ---- Bloques de información ---- */
+
+.info-block {
+  width: 100%;
+  margin-top: 28px;
+  border-top: 1px solid rgba(74, 64, 48, 0.2);
+  padding-top: 16px;
+}
+
+.info-label {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #a15c3e;
+  margin-bottom: 8px;
+}
+
+.info-text {
+  font-size: 15.5px;
+  line-height: 1.65;
+  color: #4a4030;
+}
+
+.info-note {
+  font-size: 13px;
+  color: #8a7d68;
+  font-style: italic;
+}
+
+.info-link {
+  color: #4a4030;
+  text-decoration: none;
+  border-bottom: 1px solid #a15c3e;
+}
+
+/* ---- Texto largo (Acerca de) ---- */
+
+.about-text {
+  width: 100%;
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-text p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4a4030;
+}
+
+.about-badges {
+  width: 100%;
+  margin-top: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.about-badges span {
+  font-size: 10.5px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #a15c3e;
+  padding: 6px 10px;
+  border: 1px solid rgba(161, 92, 62, 0.4);
+}
+
+/* ---- Resumen de valoración (Opiniones) ---- */
+
+.rating-summary {
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.rating-number {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 42px;
+  color: #4a4030;
+}
+
+.rating-stars {
+  font-size: 20px;
+  color: #a15c3e;
+  letter-spacing: 2px;
+}
+
+.rating-count {
+  font-size: 12px;
+  color: #8a7d68;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+/* ---- Tarjetas de reseñas ---- */
+
+.reviews-list {
+  width: 100%;
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.review-card {
+  width: 100%;
+  padding: 18px;
+  background-color: #ffffff;
+  border: 1px solid rgba(74, 64, 48, 0.25);
+}
+
+.review-text {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: #4a4030;
+}
+
+.review-source {
+  display: block;
+  margin-top: 10px;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #a15c3e;
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 420px) {
+  .phone-screen {
+    width: 100%;
+    min-height: 100vh;
+  }
+}
